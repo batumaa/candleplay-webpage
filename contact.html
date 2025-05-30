@@ -6,12 +6,16 @@
   <title>Contact Us – CandlePlay</title>
   <style>
     body {
+      margin: 0;
       font-family: "Helvetica Neue", sans-serif;
       background: white;
       color: #333;
       text-align: center;
-      margin: 0;
-      padding: 0;
+    }
+
+    .top-bar {
+      background-color: #5cb85c;
+      height: 50px;
     }
 
     .container {
@@ -21,65 +25,34 @@
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    p.subtitle {
-      color: #666;
-      font-size: 18px;
-      margin-top: -10px;
-      margin-bottom: 30px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    input, textarea {
-      padding: 14px;
-      border-radius: 6px;
-      border: 2px solid #ccc;
+    p {
       font-size: 16px;
-      resize: vertical;
-      transition: border-color 0.3s;
+      color: #555;
     }
 
-    input:focus, textarea:focus {
-      outline: none;
-      border-color: #5cb85c;
-    }
-
-    .submit-btn {
-      background-color: #5cb85c;
-      color: white;
-      border: none;
-      padding: 14px;
-      border-radius: 6px;
+    .email {
       font-size: 18px;
+      margin-top: 30px;
       font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .submit-btn:hover {
-      background-color: #4cae4c;
+      color: #5cb85c;
+      word-break: break-word;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>We would love to hear from you!</h1>
-    <p class="subtitle">Let us know how we can improve CandlePlay for you.</p>
 
-    <form action="mailto:support@candleplay.co" method="POST" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Name" required />
-      <input type="email" name="Email" placeholder="Email" required />
-      <textarea name="Comment" placeholder="Comment" rows="5" required></textarea>
-      <button class="submit-btn" type="submit">SUBMIT</button>
-    </form>
+  <div class="top-bar"></div>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>If you have any questions, feedback, or need support, please reach out to us:</p>
+    <p class="email">support@candleplay.co</p>
   </div>
+
 </body>
 </html>
